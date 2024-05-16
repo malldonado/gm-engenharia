@@ -51,7 +51,7 @@ function SettingsPanel() {
   };
 
   return (
-    <form className="w-4/5 mx-auto" onSubmit={handleSubmit}>
+    <form className="md:w-4/5 w-[90%] mx-auto" onSubmit={handleSubmit}>
       <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
         <div className="sm:col-span-12">
           <div className="mt-8 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">

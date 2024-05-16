@@ -3,7 +3,7 @@ import ContainerPanel from "../components/containerPanel/containerPanel";
 import NavbarPanel from "../components/navbar/navbarPanel";
 import React from "react";
 
-function AboutPanel() {
+function ProjectPanel() {
   return (
     <div className="bg-[#f9fafb] h-[100vh]">
       <NavbarPanel />
@@ -15,4 +15,4 @@ function AboutPanel() {
   )
 }
 
-export default AboutPanel
+export default ProjectPanel

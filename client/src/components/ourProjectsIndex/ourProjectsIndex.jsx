@@ -13,7 +13,7 @@ function OurProjectsIndex() {
   };
 
   return (
-    <div className="max-w-[1050px] mx-auto right-0 left-0 mt-[200px] px-4 md:px-0">
+    <div className="max-w-[1050px] mx-auto right-0 left-0 mt-[70px] md:mt-[200px] px-4 md:px-0">
       <span className="text-white md:flex md:justify-center md:text-[50px] text-[40px] mb-4">
         OUR RESENT PROJECTS
       </span>

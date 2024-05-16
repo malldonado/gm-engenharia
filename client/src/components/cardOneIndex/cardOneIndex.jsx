@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function cardOneIndex() {
   return (
-    <div className="md:flex md:justify-center max-w-[1200px] mx-auto pt-10 md:h-[700px] mb-[200px] md:mt-[100px] mt-[70px]">
+    <div className="md:flex md:justify-center max-w-[1200px] mx-auto pt-10 md:h-[700px] mb-[130px] md:mb-[200px] md:mt-[100px] mt-[0px]">
       <div className="md:w-[50%] mt-20 md:ml-[90px] px-4 md:px-0 mb-4 md:mb-0">
         <span className="text-white md:text-[60px] text-[40px]">
           SEE MORE <br /> ABOUT OUR <br /> COMPANY

@@ -5,7 +5,7 @@ import OurProjectsIndex from '../components/ourProjectsIndex/ourProjectsIndex';
 import CardOneIndex from '../components/cardOneIndex/cardOneIndex';
 import MessageIndex from '../components/messageIndex/messageIndex';
 import Footer from '../components/footer/footer';
-
+import ButtonWhatsApp from '../components/buttonWhatsApp/buttonWhatsApp';
 
 function Index() {
   return (
@@ -16,6 +16,7 @@ function Index() {
       <OurProjectsIndex/>
       <CardOneIndex/>
       <MessageIndex/>
+      <ButtonWhatsApp/>
       <Footer/>
     </>
   )

@@ -60,7 +60,7 @@ function AboutPanel() {
 
   return (
     <form
-      className="w-4/5 mt-6 mx-auto flex-col flex gap-y-5"
+      className="md:w-4/5 w-[90%] mt-6 mx-auto flex-col flex gap-y-5"
       onSubmit={handleSubmit}
     >
       <div className="sm:col-span-6 mt-1">

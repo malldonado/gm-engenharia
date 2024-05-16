@@ -7,7 +7,7 @@ function PostsPanel() {
   return (
     <div className="bg-[#f9fafb] h-[100vh]">
       <NavbarPanel />
-      <div className="max-w-[80%] h-[90vh] m-auto flex overflow-hidden">
+      <div className="md:max-w-[80%] h-[90vh] m-auto flex overflow-hidden">
         <Sidebar />
         <ContainerPanel />
       </div>

@@ -23,7 +23,7 @@ function Footer() {
   }, []);
 
   return (
-    <div className="w-full mt-[150px] h-full">
+    <div className="w-full mt-[100px] md:mt-[150px] h-full">
       <div className="md:flex block w-full text-center md:text-left md:justify-center md:items-center h-full">
         <div className="items-center md:w-[30%] flex justify-center mb-[30px] w-full">
           <ul className="text-white">
@@ -36,16 +36,35 @@ function Footer() {
                 />
               </Link>
             </li>
-            <li className="mb-3 cursor-pointer block">{formData.streetAddress}</li>
-            <li className="mb-3 cursor-pointer block">CEP: {formData.cep} - {formData.city}/{formData.regio}</li>
+            <li className="mb-3 cursor-pointer block">
+              {formData.streetAddress}
+            </li>
+            <li className="mb-3 cursor-pointer block">
+              CEP: {formData.cep} - {formData.city}/{formData.region}
+            </li>
             <li className="flex md:justify-start justify-center gap-3 mt-4">
-              <a href={formData.facebook} className="text-[26px] cursor-pointer" target="_blank" rel="noopener noreferrer">
+              <a
+                href={formData.facebook}
+                className="text-[26px] cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookSquare className="fill-white hover:fill-[#af9155]" />
               </a>
-              <a href={formData.instagram} className="text-[26px] cursor-pointer" target="_blank" rel="noopener noreferrer">
+              <a
+                href={formData.instagram}
+                className="text-[26px] cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <RiInstagramFill className="fill-white hover:fill-[#af9155]" />
               </a>
-              <a href={formData.twitter} className="text-[26px] cursor-pointer" target="_blank" rel="noopener noreferrer">
+              <a
+                href={formData.twitter}
+                className="text-[26px] cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaSquareXTwitter className="fill-white hover:fill-[#af9155]" />
               </a>
             </li>
@@ -53,9 +72,8 @@ function Footer() {
         </div>
         <div className="items-center md:w-[30%] flex justify-center mb-[30px] w-full">
           <ul className="text-white">
-            <li className="text-[22px] font-medium md:mb-12 mb-6 sm:mt-10 mt-6">Company</li>
-            <li className="cursor-pointer mb-3">
-              <Link to={"/services"}>Services</Link>
+            <li className="text-[22px] font-medium md:mb-12 mb-6 sm:mt-0 mt-6">
+              Company
             </li>
             <li className="cursor-pointer mb-3">
               <Link to={"/projects"}>Projects</Link>
@@ -67,7 +85,9 @@ function Footer() {
         </div>
         <div className="items-center md:w-[30%] flex justify-center mb-[30px] w-full">
           <ul className="text-white">
-            <li className="text-[22px] font-medium md:mb-12 mb-6 sm:mt-0 mt-6">Contact</li>
+            <li className="text-[22px] font-medium md:mb-12 mb-6 sm:mt-0 mt-6">
+              Contact
+            </li>
             <li className="mb-3 cursor-pointer block">{formData.email}</li>
             <li className="cursor-pointer">Phone: +55 {formData.phone}</li>
           </ul>
@@ -75,7 +95,10 @@ function Footer() {
       </div>
       <span className="text-white text-[12px] md:text-[16px] text-center md:flex md:justify-center md:align-bottom mt-20 pb-8 font-light opacity-75 block">
         © GTM Engenharia all rights 2023 - Designed by{" "}
-        <Link className="pl-1 hover:underline md:decoration-white" to={"http://malldonado.dev"}>
+        <Link
+          className="pl-1 hover:underline md:decoration-white"
+          to={"http://malldonado.dev"}
+        >
           {" "}
           malldonado.dev
         </Link>
