@@ -9,6 +9,10 @@ const postsSchema = mongoose.Schema(
       type: String,
       required: [true],
     },
+    favorited: {
+      type: Boolean,
+      required: [false],
+    }
   },
   {
     timestamp: true,
