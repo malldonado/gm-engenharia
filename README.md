@@ -1,14 +1,12 @@
 # Gtm Engineering
 
-Gtm Engineering is an innovative project that offers a fully customizable website for clients seeking a unique and efficient online presence. Developed with modern technologies, this project is built with powerful ReactJS and agile ViteJS, powered by elegant TailwindCSS for a smooth and highly customizable front-end experience.
-
-Additionally, it integrates Evergreen-UI to provide reusable components and a consistent interface. Under the hood, the backend is powered by robust NodeJS and utilizes MongoDB as the database, ensuring reliable scalability and performance.
+Gtm Engenharia presents an innovative project, offering a fully customizable website. Within it, you will find a detailed blog showcasing all our completed works and projects, alongside a contact channel enabling clients to reach out and finalize deals. Our website features an exclusive admin panel, granting complete control and customization capabilities. Developed with modern technologies such as powerful ReactJS and swift ViteJS, styled with elegance using TailwindCSS, we ensure a smooth and highly customizable front-end experience.
 
 ## Installation
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/gtm-engineering.git
+   git clone https://github.com/malldonado/gtm-engenharia.git
 
 2. **Navigate to the project directory:**
    ```sh
