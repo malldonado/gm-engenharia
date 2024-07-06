@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import axios from "axios";
 import { FaStar as FaStarRegular } from "react-icons/fa6";

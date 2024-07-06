@@ -60,3 +60,20 @@ exports.getUserData = async (req, res) => {
     res.status(500).json({ error: "Erro interno do servidor" });
   }
 };
+
+exports.login = async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    const user = await UserData.findOne({ email });
+
+    if (!user || user.password !== password) {
+      return res.status(401).json({ error: 'Invalid credentials' });
+    }
+
+    res.json({ message: 'Login successful', user });
+  } catch (error) {
+    console.error('Error during login:', error);
+    res.status(500).json({ error: 'Failed to login' });
+  }
+};
