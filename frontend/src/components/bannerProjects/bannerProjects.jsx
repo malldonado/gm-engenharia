@@ -9,7 +9,7 @@ function BannerProjects() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/posts/favorite"
+          "https://gtm-backend.vercel.app/posts/favorite"
         );
         setData(response.data.data || []);
       } catch (error) {
@@ -29,7 +29,7 @@ function BannerProjects() {
             {item.image && (
               <img
                 className="z-[-1] relative object-cover h-[300px] w-full"
-                src={`http://localhost:8000/uploads/${item.image}`}
+                src={`https://gtm-backend.vercel.app/uploads/${item.image}`}
                 alt="Banner Image"
               />
             )}

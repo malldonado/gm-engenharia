@@ -21,7 +21,7 @@ function SettingsPanel() {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/user-update");
+        const response = await axios.get("https://gtm-backend.vercel.app/user-update");
         setFormData(response.data);
       } catch (error) {
         console.error(error);
@@ -39,7 +39,7 @@ function SettingsPanel() {
     e.preventDefault();
     try {
       const response = await axios.put(
-        "http://localhost:8000/user-update",
+        "https://gtm-backend.vercel.app/user-update",
         formData
       );
       console.log(response.data);

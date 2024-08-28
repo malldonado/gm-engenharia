@@ -10,7 +10,7 @@ function AboutPanel() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/about/latest");
+        const response = await axios.get("https://gtm-backend.vercel.app/about/latest");
         const { title, text } = response.data;
         setTitle(title);
         setText(text);
@@ -42,7 +42,7 @@ function AboutPanel() {
       formData.append("file", file);
 
       const response = await axios.put(
-        "http://localhost:8000/about",
+        "https://gtm-backend.vercel.app/about",
         formData,
         {
           headers: {

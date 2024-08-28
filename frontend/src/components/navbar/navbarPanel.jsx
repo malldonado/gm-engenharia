@@ -13,7 +13,7 @@ function NavbarPanel() {
     // Função para buscar informações do usuário
     const fetchUserInfo = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/user-update");
+        const response = await axios.get("https://gtm-backend.vercel.app/user-update");
         setUserFirstName(response.data.firstName);
       } catch (error) {
         console.error("Erro ao buscar informações do usuário:", error);

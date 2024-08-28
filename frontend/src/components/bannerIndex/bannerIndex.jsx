@@ -17,7 +17,7 @@ function BannerIndex() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/posts");
+        const response = await axios.get("https://gtm-backend.vercel.app/posts");
         setData(response.data.data || []);
       } catch (error) {
         setError(error);
@@ -33,7 +33,7 @@ function BannerIndex() {
     const fetchSocialMediaData = async () => {
       try {
         const socialMediaResponse = await axios.get(
-          "http://localhost:8000/user-update"
+          "https://gtm-backend.vercel.app/user-update"
         );
         const socialMediaData = socialMediaResponse.data;
         setFormData({
@@ -77,7 +77,7 @@ function BannerIndex() {
                   {item.image && (
                     <img
                       className="z-[-1] relative object-cover w-full md:h-full h-[600px]"
-                      src={`http://localhost:8000/uploads/${item.image}`}
+                      src={`https://gtm-backend.vercel.app/uploads/${item.image}`}
                       alt=""
                     />
                   )}

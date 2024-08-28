@@ -6,7 +6,7 @@ function BannerAbout() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/about/latest")
+      .get("https://gtm-backend.vercel.app/about/latest")
       .then((response) => {
         setAboutData(response.data);
       })
@@ -28,7 +28,7 @@ function BannerAbout() {
         aboutData.file && (
           <img
             className="md:h-[400px] md:w-[400px] object-cover md:mr-10 w-full h-full"
-            src={`http://localhost:8000/uploads/${aboutData.file}`}
+            src={`https://gtm-backend.vercel.app/uploads/${aboutData.file}`}
             alt=""
           />
         )}
