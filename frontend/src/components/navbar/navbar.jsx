@@ -30,6 +30,7 @@ function Navbar() {
             <MenuItem label="Projects" />
             <MenuItem label="About us" />
             <MenuItem label="Contact" />
+            <MenuItem label="Login" />
           </div>
           <div className="md:hidden">
             {/* Hamburger Menu */}
@@ -47,6 +48,7 @@ function Navbar() {
             <MenuItem label="Home" /> <MenuItem label="Projects" />
             <MenuItem label="About us" />
             <MenuItem label="Contact" />
+            <MenuItem label="Login" />
           </div>
         </div>
       )}

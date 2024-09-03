@@ -1,46 +1,30 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
+import useAbout from "../../hooks/panel/about/useAbout";
 
 function BannerAbout() {
-  const [aboutData, setAboutData] = useState(null);
-
-  useEffect(() => {
-    axios
-      .get("https://gtm-backend.vercel.app/about/latest")
-      .then((response) => {
-        setAboutData(response.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching latest data:", error);
-      });
-  }, []);
-
-  const renderParagraphs = (text) => {
-    const paragraphs = text.split("\n");
-    return paragraphs.map((paragraph, index) => (
-      <p key={index} style={{ marginBottom: "5px" }}>{paragraph}</p>
-    ));
-  };
+  const {
+    title,
+    text,
+    file,
+    renderParagraphs
+  } = useAbout();
 
   return (
     <div className="max-w-7xl md:flex md:justify-center mx-auto md:mt-20 mt-10 items-start px-4 md:px-0">
-      {aboutData &&
-        aboutData.file && (
-          <img
-            className="md:h-[400px] md:w-[400px] object-cover md:mr-10 w-full h-full"
-            src={`https://gtm-backend.vercel.app/uploads/${aboutData.file}`}
-            alt=""
-          />
-        )}
+      {file && (
+        <img
+          className="md:h-[400px] md:w-[400px] object-cover md:mr-10 w-full h-full"
+          src={`https://gtm-backend.vercel.app/uploads/${file}`}
+          alt="About Banner"
+        />
+      )}
       <div className="md:w-[50%] mt-10 md:mt-0">
         <div className="text-white">
-          {aboutData ? (
+          {title && text ? (
             <>
-              <h1 className="text-4xl overflow-hidden">
-                {aboutData.title}
-              </h1>
+              <h1 className="text-4xl overflow-hidden">{title}</h1>
               <br />
-              {renderParagraphs(aboutData.text)}
+              {renderParagraphs(text)}
             </>
           ) : (
             <p>Loading...</p>

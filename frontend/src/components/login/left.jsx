@@ -9,10 +9,6 @@ function left() {
           <h2 className="text-white font-bold text-[24px] nunito-font mt-10">
             GTM ENGENHARIA
           </h2>
-          <p className="mt-2 text-white nunito-font text-[14px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
         </div>
       </div>
     </div>

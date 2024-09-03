@@ -1,57 +1,11 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import useBanner from "../../hooks/panel/home/useBanner";
+import React from "react";
 
 function BannerIndex() {
-  const [data, setData] = useState([]);
-  const [formData, setFormData] = useState({
-    facebook: "",
-    instagram: "",
-    twitter: "",
-  });
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get("https://gtm-backend.vercel.app/posts");
-        setData(response.data.data || []);
-      } catch (error) {
-        setError(error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    const fetchSocialMediaData = async () => {
-      try {
-        const socialMediaResponse = await axios.get(
-          "https://gtm-backend.vercel.app/user-update"
-        );
-        const socialMediaData = socialMediaResponse.data;
-        setFormData({
-          facebook: socialMediaData.facebook,
-          instagram: socialMediaData.instagram,
-          twitter: socialMediaData.twitter,
-        });
-      } catch (error) {
-        setError(error);
-      }
-    };
-
-    fetchSocialMediaData();
-  }, []);
-
-  const zoomInProperties = {
-    scale: 1.4,
-  };
+  const { data, formData, zoomInProperties, isLoading, error } = useBanner();
 
   if (isLoading) {
     return <div>Carregando...</div>;
