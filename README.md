@@ -1,6 +1,6 @@
-# Gtm Engineering
+# GM Engineering
 
-Gtm Engenharia presents an innovative project, offering a fully customizable website. Within it, you will find a detailed blog showcasing all our completed works and projects, alongside a contact channel enabling clients to reach out and finalize deals. Our website features an exclusive admin panel, granting complete control and customization capabilities. Developed with modern technologies such as powerful ReactJS and swift ViteJS, styled with elegance using TailwindCSS, we ensure a smooth and highly customizable front-end experience.
+GM Engenharia presents an innovative project, offering a fully customizable website. Within it, you will find a detailed blog showcasing all our completed works and projects, alongside a contact channel enabling clients to reach out and finalize deals. Our website features an exclusive admin panel, granting complete control and customization capabilities. Developed with modern technologies such as powerful ReactJS and swift ViteJS, styled with elegance using TailwindCSS, we ensure a smooth and highly customizable front-end experience.
 
 https://github.com/malldonado/gtm-engenharia/assets/47877623/dc78a005-0f27-4917-8d1c-abbe470986b2
 
