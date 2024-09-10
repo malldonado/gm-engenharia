@@ -8,7 +8,7 @@ GM Engenharia presents an innovative project, offering a fully customizable webs
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/malldonado/gtm-engenharia.git
+   git clone https://github.com/malldonado/gm-engenharia.git
 
 2. **Navigate to the project directory:**
    ```sh
