@@ -14,7 +14,7 @@ exports.updateUserData = async (req, res) => {
       region,
       facebook,
       instagram,
-      twitter,
+      pinterest,
     } = req.body;
 
     const existingUser = await UserData.findOne({});
@@ -34,7 +34,7 @@ exports.updateUserData = async (req, res) => {
     existingUser.region = region;
     existingUser.facebook = facebook;
     existingUser.instagram = instagram;
-    existingUser.twitter = twitter;
+    existingUser.pinterest = pinterest;
 
     await existingUser.save();
 

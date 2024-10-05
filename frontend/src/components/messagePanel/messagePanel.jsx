@@ -16,7 +16,7 @@ function MessagePanel() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("https://gtm-backend.vercel.app/contact");
+      const response = await axios.get("http://localhost:8000/contact");
       setProjectsData(response.data);
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -25,7 +25,7 @@ function MessagePanel() {
 
   const deleteProject = async (id) => {
     try {
-      await axios.delete(`https://gtm-backend.vercel.app/contact/${id}`);
+      await axios.delete(`http://localhost:8000/contact/${id}`);
       setProjectsData(projectsData.filter((project) => project._id !== id));
     } catch (error) {
       console.error("Error deleting data:", error);

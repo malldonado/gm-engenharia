@@ -176,7 +176,7 @@ function ProjectPanel() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://gtm-backend.vercel.app/panel-post");
+        const response = await axios.get("http://localhost:8000/panel-post");
         const { title, description } = response.data;
         setTitle(title);
         setDescription(description);
@@ -212,7 +212,7 @@ function ProjectPanel() {
       files.forEach((file) => formData.append("file", file));
 
       const response = await axios.post(
-        "https://gtm-backend.vercel.app/panel-post",
+        "http://localhost:8000/panel-post",
         formData,
         {
           headers: {

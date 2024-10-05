@@ -18,7 +18,7 @@ function PostPanel() {
 
   const deleteProject = async (id) => {
     try {
-      await axios.delete(`https://gtm-backend.vercel.app/posts/${id}`);
+      await axios.delete(`http://localhost:8000/posts/${id}`);
       setInfo(info.filter((project) => project._id !== id));
       setStatus({ type: "success", message: "Data deleted successfully!" });
     } catch (error) {
@@ -37,7 +37,7 @@ function PostPanel() {
     formDataObj.append("file", formData.file);
 
     try {
-      await axios.post("https://gtm-backend.vercel.app/posts", formDataObj, {
+      await axios.post("http://localhost:8000/posts", formDataObj, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -47,7 +47,7 @@ function PostPanel() {
         type: "success",
         message: "Information updated successfully!",
       });
-      const response = await axios.get("https://gtm-backend.vercel.app/posts");
+      const response = await axios.get("http://localhost:8000/posts");
       setInfo(response.data.data);
     } catch (error) {
       console.error("Error sending data:", error);
@@ -61,7 +61,7 @@ function PostPanel() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get("https://gtm-backend.vercel.app/posts");
+        const response = await axios.get("http://localhost:8000/posts");
         setInfo(response.data.data);
       } catch (error) {
         console.error("Error fetching posts:", error);
@@ -82,7 +82,7 @@ function PostPanel() {
       setInfo(updatedInfo);
 
       const response = await axios.post(
-        `https://gtm-backend.vercel.app/posts/${itemId}/favorite`,
+        `http://localhost:8000/posts/${itemId}/favorite`,
         {
           favorited: !isFavorited,
         }
@@ -164,7 +164,7 @@ function PostPanel() {
                 {item.image && (
                   <img
                     className="relative w-full md:h-full h-full object-cover hover:opacity-65 cursor-pointer"
-                    src={`https://gtm-backend.vercel.app/uploads/${item.image}`}
+                    src={`http://localhost:8000/uploads/${item.image}`}
                     alt=""
                   />
                 )}

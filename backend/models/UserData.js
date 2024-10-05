@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
   region: { type: String, required: true },
   facebook: { type: String },
   instagram: { type: String },
-  twitter: { type: String },
+  pinterest: { type: String },
 });
 
 userSchema.statics.findOneByEmail = function(email) {

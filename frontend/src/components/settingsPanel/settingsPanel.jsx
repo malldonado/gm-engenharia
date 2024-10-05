@@ -15,13 +15,13 @@ function SettingsPanel() {
     region: "",
     facebook: "",
     instagram: "",
-    twitter: "",
+    pinterest: "",
   });
 
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("https://gtm-backend.vercel.app/user-update");
+        const response = await axios.get("http://localhost:8000/user-update");
         setFormData(response.data);
       } catch (error) {
         console.error(error);
@@ -39,7 +39,7 @@ function SettingsPanel() {
     e.preventDefault();
     try {
       const response = await axios.put(
-        "https://gtm-backend.vercel.app/user-update",
+        "http://localhost:8000/user-update",
         formData
       );
       console.log(response.data);
@@ -258,7 +258,7 @@ function SettingsPanel() {
                   value={formData.facebook}
                   onChange={handleChange}
                   autoComplete="facebook"
-                  placeholder="https://www.facebook.com/criativitis/"
+                  placeholder="https://www.facebook.com/gmengenharia"
                   className="block w-full rounded-md border-0 py-1.5 pl-3 outline-none text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 font-medium"
                   required
                 />
@@ -279,7 +279,7 @@ function SettingsPanel() {
                   value={formData.instagram}
                   onChange={handleChange}
                   autoComplete="instagram"
-                  placeholder="https://www.instagram.com/criativitis/"
+                  placeholder="https://www.instagram.com/gmengenharia"
                   className="block w-full rounded-md border-0 py-1.5 pl-3 outline-none text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 font-medium"
                   required
                 />
@@ -290,17 +290,17 @@ function SettingsPanel() {
                 htmlFor="region"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
-                Twitter
+                Pinterest
               </label>
               <div className="mt-2">
                 <input
                   type="text"
-                  name="twitter"
-                  id="twitter"
-                  value={formData.twitter}
+                  name="pinterest"
+                  id="pinterest"
+                  value={formData.pinterest}
                   onChange={handleChange}
-                  autoComplete="twitter"
-                  placeholder="https://twitter.com/criativitis"
+                  autoComplete="pinterest"
+                  placeholder="https://www.pinterest.com/gmengenharia"
                   className="block w-full rounded-md border-0 py-1.5 pl-3 outline-none text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 font-medium"
                   required
                 />

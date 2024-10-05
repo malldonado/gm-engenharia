@@ -15,7 +15,7 @@ function OurProjectsIndex() {
   return (
     <div className="max-w-[1050px] mx-auto right-0 left-0 mt-[70px] md:mt-[200px] px-4 md:px-0">
       <span className="text-white md:flex md:justify-center md:text-[50px] text-[40px] mb-4">
-        OUR RESENT PROJECTS
+        OUTROS PROJETOS RECENTES
       </span>
       <p className="text-white md:flex md:justify-center md:text-[18px] normal md:text-center leading-[1.5] opacity-70 md:mb-10 mb-8">
         It is a long established fact that a reader will be distracted by the
