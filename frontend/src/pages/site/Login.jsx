@@ -3,7 +3,7 @@ import Left from "../../components/site/login/left";
 import Right from "../../components/site/login/right";
 import HashLoader from "react-spinners/HashLoader";
 
-function Login() {
+function LoginPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -33,4 +33,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default LoginPage;

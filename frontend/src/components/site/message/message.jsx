@@ -2,21 +2,20 @@ import { IoMdArrowForward } from "react-icons/io";
 import useMessage from "../../../hooks/site/useMessage";
 
 function Message() {
-
-  const { success, formData, handleChange, handleSubmit, handleSendMessage}  = useMessage();
+  const { success, formData, handleChange, handleSubmit, handleSendMessage } =
+    useMessage();
 
   return (
     <div className="max-w-[1010px] md:flex md:justify-center md:items-top text-white mx-auto md:mt-[200px] px-4 md:px-0">
       <div className="md:w-[45%] md:pr-5 ml-4 xl:ml-0">
         <span className="text-center md:text-[50px] text-[40px] leading-tight">
           VAMOS DISCUTIR
-          <br /> 
+          <br />
           SEU PRÓXIMO PROJETO?
         </span>
         <span className="block md:mt-5 md:text-[18px] opacity-70 mb-10 md:mb-0 mt-4">
-          Ready to move forward with your construction project? Send us an email
-          today to start turning your vision into reality, with expertise and
-          commitment.
+          Entre em contato com a equipe da empresa para fechar orçamentos
+          personalizados ou obter mais informações sobre projetos concluídos.
         </span>
       </div>
       <div className="md:w-[50%] overflow-hidden">
@@ -64,7 +63,7 @@ function Message() {
           </button>
           {success && (
             <div className="text-white mb-3 text-xl mt-4">
-              Thank you for reaching out, we will be in touch!
+              Obrigado por entrar em contato, entraremos em contato!
             </div>
           )}
         </form>

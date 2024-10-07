@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../components/site/navbar/navbar";
 import Footer from "../../components/site/footer/footer";
-import MessageIndex from "../../components/site/message/message";
+import Message from "../../components/site/message/message";
 import HashLoader from "react-spinners/HashLoader";
 
-function Contact() {
+function ContactPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -22,11 +22,11 @@ function Contact() {
       </div>
       <div className={`${loading ? 'hidden' : ''}`}>
         <Navbar />
-        <MessageIndex />
+        <Message />
         <Footer />
       </div>
     </div>
   );
 }
 
-export default Contact;
+export default ContactPage;

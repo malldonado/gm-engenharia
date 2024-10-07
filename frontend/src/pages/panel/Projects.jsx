@@ -1,18 +1,18 @@
 import Sidebar from "../../components/site/sidebar/sidebar";
-import ContainerPanel from "../../components/panel/container/container";
-import NavbarPanel from "../../components/panel/navbar/navbar";
+import Container from "../../components/panel/container/container";
+import Navbar from "../../components/panel/navbar/navbar";
 import React from "react";
 
-function Projects() {
+function ProjectsPage() {
   return (
     <div className="bg-[#f9fafb] h-[100vh]">
-      <NavbarPanel />
+      <Navbar />
       <div className="md:max-w-[80%] h-[90vh] m-auto flex overflow-hidden">
         <Sidebar />
-        <ContainerPanel />
+        <Container />
       </div>
     </div>
   )
 }
 
-export default Projects
+export default ProjectsPage

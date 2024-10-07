@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../components/site/navbar/navbar";
-import BannerAbout from "../../components/panel/banner/banner";
+import Banner from "../../components/panel/banner/banner";
 import Footer from "../../components/site/footer/footer";
 import HashLoader from "react-spinners/HashLoader";
 
-function About() {
+function AboutPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -23,11 +23,11 @@ function About() {
       
       <div className={`${loading ? 'hidden' : ''}`}>
         <Navbar />
-        <BannerAbout />
+        <Banner />
         <Footer />
       </div>
     </div>
   );
 }
 
-export default About;
+export default AboutPage;

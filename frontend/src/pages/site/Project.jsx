@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from "../../components/site/navbar/navbar";
 import Footer from "../../components/site/footer/footer";
-import ProjectOpen from "../../components/projectOpen/projectOpen";
+import Project from "../../components/panel/project/project";
 import HashLoader from 'react-spinners/HashLoader';
 
-function Project() {
+function ProjectPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -23,11 +23,11 @@ function Project() {
       
       <div className={`${loading ? 'hidden' : ''}`}>
         <Navbar />
-        <ProjectOpen />
+        <Project />
         <Footer />
       </div>
     </div>
   );
 }
 
-export default Project;
+export default ProjectPage;

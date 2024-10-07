@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import ProjectsPanel from "../../components/projectsPanel/projectsPanel";
-import ProjectPanel from "../../components/projectPanel/projectPanel";
-import AboutPanel from "../../components/panel/about/about";
-import SettingsPanel from "../../components/settingsPanel/settingsPanel";
-import PostPanel from "../../components/postPanel/postPanel";
-import MessagePanel from "../../components/messagePanel/messagePanel";
+import Projects from "../../components/site/projects/projects";
+import Project from "../../components/panel/project/project";
+import About from "../../components/panel/about/about";
+import Settings from "../../components/panel/settings/settings";
+import Post from "../../components/panel/post/post";
+import Message from "../../components/panel/message/message";
 
 function useContainer() {
+
   const [loading, setLoading] = useState(true);
   const location = useLocation();
 
@@ -22,17 +23,17 @@ function useContainer() {
 
   const renderPanel = () => {
     if (location.pathname.indexOf("panel") === 1) {
-      return <PostPanel />;
+      return <Post />;
     } else if (location.pathname.indexOf("projects-panel") === 1) {
-      return <ProjectsPanel />;
+      return <Projects />;
     } else if (location.pathname.indexOf("project-panel") === 1) {
-      return <ProjectPanel />;
+      return <Project />;
     } else if (location.pathname.indexOf("about-panel") === 1) {
-      return <AboutPanel />;
+      return <About />;
     } else if (location.pathname.indexOf("message-panel") === 1) {
-      return <MessagePanel />;
+      return <Message />;
     } else if (location.pathname.indexOf("settings-panel") === 1) {
-      return <SettingsPanel />;
+      return <Settings />;
     } else {
       return null;
     }

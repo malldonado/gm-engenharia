@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/site/navbar/navbar';
-import BannerIndex from '../../components/site/banner/banner';
-import CategoriesIndex from '../../components/servicos/servicos';
-import OurProjectsIndex from '../../components/ourProjectsIndex/ourProjectsIndex';
-import CardOneIndex from '../../components/site/cardOneIndex/cardOneIndex';
-import MessageIndex from '../../components/site/message/message';
+import Banner from '../../components/site/banner/banner';
+import Services from '../../components/site/services/services';
+import OurProjects from '../../components/site/ourProjects/ourProjects';
+import CardOne from '../../components/site/cardOne/cardOne';
+import Message from '../../components/site/message/message';
 import Footer from '../../components/site/footer/footer';
 import ButtonWhatsApp from '../../components/site/buttonWhatsApp/buttonWhatsApp';
 import HashLoader from 'react-spinners/HashLoader';
 
-function Index() {
+function IndexPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -28,11 +28,11 @@ function Index() {
       
       <div className={`${loading ? 'hidden' : ''}`}>
         <Navbar />
-        <BannerIndex />
-        <CategoriesIndex />
-        <OurProjectsIndex />
-        <CardOneIndex />
-        <MessageIndex />
+        <Banner />
+        <Services />
+        <OurProjects />
+        <CardOne />
+        <Message />
         <ButtonWhatsApp />
         <Footer />
       </div>
@@ -40,4 +40,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default IndexPage;

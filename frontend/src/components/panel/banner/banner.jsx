@@ -1,9 +1,7 @@
 import useBanner from "../../../hooks/panel/useBanner";
 
 function Banner() {
-
   const { aboutData, renderParagraphs } = useBanner();
-
   return (
     <div className="max-w-7xl md:flex md:justify-center mx-auto md:mt-20 mt-10 items-start px-4 md:px-0">
       {aboutData &&

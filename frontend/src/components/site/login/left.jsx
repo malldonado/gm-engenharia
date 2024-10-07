@@ -1,6 +1,6 @@
 import Banner from "../../../images/banner.svg";
 
-function left() {
+function Left() {
   return (
     <div className="md:w-[60%] hidden md:block">
       <div className="w-[100%] h-full bg-black flex justify-center items-center">
@@ -18,4 +18,4 @@ function left() {
   );
 }
 
-export default left;
+export default Left;

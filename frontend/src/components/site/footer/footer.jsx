@@ -47,7 +47,7 @@ function Footer() {
                 <RiInstagramFill className="fill-white hover:fill-[#af9155]" />
               </a>
               <a
-                href={formData.twitter}
+                href={formData.pinterest}
                 className="text-[26px] cursor-pointer"
                 target="_blank"
                 rel="noopener noreferrer"
