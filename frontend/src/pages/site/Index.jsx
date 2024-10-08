@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/site/navbar/navbar';
 import Banner from '../../components/site/banner/banner';
-import Services from '../../components/services/services';
+import Services from '../../components/site/services/services';
 import OurProjects from '../../components/site/ourProjects/ourProjects';
 import CardOne from '../../components/site/cardOneIndex/cardOne';
 import Message from '../../components/site/message/message';

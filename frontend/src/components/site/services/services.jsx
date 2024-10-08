@@ -1,6 +1,6 @@
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import useServices from "../../hooks/site/useServices";
+import useServices from "../../../hooks/site/useServices";
 
 function Services() {
   const { cards, isMobile, zoomInProperties, handleSlideChange } =
